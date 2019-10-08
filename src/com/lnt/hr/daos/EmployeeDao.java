@@ -8,6 +8,7 @@ import com.lnt.hr.exceptions.EmpException;
 
 public interface EmployeeDao {
 	public List<Employees> getEmpList() throws EmpException;
+	public Employees getEmpDetails(int empNo) throws EmpException;
 	
 
 }

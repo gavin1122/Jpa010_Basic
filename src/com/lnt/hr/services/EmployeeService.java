@@ -7,5 +7,7 @@ import com.lnt.hr.exceptions.EmpException;
 
 public interface EmployeeService {
 	public List<Employees> getEmpList() throws EmpException;
+	public Employees getEmpDetails(int empNo) throws EmpException;
 
+	
 }

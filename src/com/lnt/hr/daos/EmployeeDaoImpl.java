@@ -47,4 +47,13 @@ public class EmployeeDaoImpl  implements EmployeeDao{
 		super.finalize();
 	}
 
+
+	@Override
+	public Employees getEmpDetails(int empNo) throws EmpException {
+		// TODO Auto-generated method stub
+		Employees emp= manager.find(Employees.class,empNo);
+		return emp;
+	}
+	
+
 }

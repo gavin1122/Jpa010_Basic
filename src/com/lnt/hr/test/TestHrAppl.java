@@ -13,10 +13,13 @@ public class TestHrAppl {
 	{
 		EmployeeService service=new EmployeeServiceImpl() ;
 		try {
-			List<Employees>  empList=service.getEmpList();
+			/*List<Employees>  empList=service.getEmpList();
 			for(Employees emp: empList) {
 				System.out.println(emp);
-			}
+			}*/
+			Employees emp=service.getEmpDetails(105);
+			System.out.println(emp);
+			
 		} catch (EmpException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

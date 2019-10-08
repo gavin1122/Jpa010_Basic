@@ -23,4 +23,10 @@ public class EmployeeServiceImpl implements EmployeeService {
 		return empList;
 	}
 
+	@Override
+	public Employees getEmpDetails(int empNo) throws EmpException {
+		// TODO Auto-generated method stub
+		return dao.getEmpDetails(empNo);
+	}
+
 }
